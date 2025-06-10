@@ -200,7 +200,7 @@ def get_mpipi_system(positions, topology, globular_indices_dict, T, csx, CM_remo
     
     for chain in topology.chains():
         atoms = list(chain.atoms())
-        if 'nuc' in chain.id: # as above, nucleosomes require a bit more car
+        if 'nuc' in chain.id: 
             
             for i, atom in enumerate(atoms):
                 globular = 1 if atom.element.symbol == 'Pt' else 0
